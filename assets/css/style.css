@@ -1,0 +1,44 @@
+#imageThumb {
+    max-width: 80px;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .modal-sm {
+        width: 340px!important;
+    }
+}
+
+.modal .thumbnail {
+    margin-bottom: 0;
+}
+.modal .thumbnail img {
+    max-width: 320px;
+    max-height: 240px;
+}
+
+.task {
+    height: 480px;
+    overflow: hidden;
+}
+.task__text {
+    border: 1px solid transparent;
+}
+.task:hover {
+    overflow: visible;
+    height: 480px;
+
+}
+.task:hover .task__text {
+    background-color: white;
+    position: relative;
+    z-index: 10;
+    margin-left: -14px;
+    margin-right: -14px;
+    padding: 0 14px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 18px 18px 0 rgba(0,0,0,0.12), 0 3px 3px -1px rgba(0,0,0,0.3);
+}
